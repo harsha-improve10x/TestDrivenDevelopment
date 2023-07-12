@@ -1,3 +1,5 @@
+package fibonacci;
+
 public class Fibonacci {
     public int findNthNumber(int n) {
         if (n <= 0) {

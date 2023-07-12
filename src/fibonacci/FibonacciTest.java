@@ -1,3 +1,5 @@
+package fibonacci;
+
 import org.testng.annotations.Test;
 
 import static org.testng.AssertJUnit.assertEquals;
@@ -8,7 +10,7 @@ public class FibonacciTest {
     public void nothing() {
     }
     /*
-    Fibonacci example:- 0, 1, 1, 2, 3, 5
+    fibonacci.Fibonacci example:- 0, 1, 1, 2, 3, 5
     input= -2,output= -1,
     input= 0,output= -1,
     input= 1,output= 0,
