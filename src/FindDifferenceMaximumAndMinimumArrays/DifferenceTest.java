@@ -32,4 +32,11 @@ public class DifferenceTest {
         int result = difference.findDiff(new int[]{9});
         assertEquals(9, result);
     }
+
+    @Test
+    public void giveTwoNumber_returnDifference() {
+        Difference difference = new Difference();
+        int result = difference.findDiff(new int[]{2, 3});
+        assertEquals(1, result);
+    }
 }
