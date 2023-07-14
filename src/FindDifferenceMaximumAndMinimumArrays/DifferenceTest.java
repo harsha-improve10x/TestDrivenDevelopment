@@ -39,4 +39,11 @@ public class DifferenceTest {
         int result = difference.findDiff(new int[]{2, 3});
         assertEquals(1, result);
     }
+
+    @Test
+    public void givenInput_returnDifference() {
+        Difference difference = new Difference();
+        int result = difference.findDiff(new int[]{44, 32, 86, 19});
+        assertEquals(67, result);
+    }
 }

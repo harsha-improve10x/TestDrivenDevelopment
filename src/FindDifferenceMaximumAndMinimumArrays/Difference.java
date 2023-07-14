@@ -5,9 +5,11 @@ public class Difference {
         int result = 0;
         int max = 0;
         int min = 0;
-        if (arr.length==1) {
+        if (arr.length == 0) {
+            result = 0;
+        } else if (arr.length==1) {
             result = arr[0];
-        } else if (arr.length==2) {
+        } else {
             max = arr[0];
             min = arr[0];
             for (int i=1; i<arr.length; i++) {
