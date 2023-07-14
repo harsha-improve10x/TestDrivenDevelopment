@@ -15,12 +15,11 @@ public class Difference {
             for (int i=1; i<arr.length; i++) {
                 if (arr[i] > max) {
                     max = arr[i];
-                    result = max - min;
-                } else{
+                } if (arr[i] < min){
                     min = arr[i];
-                    result = max - min;
                 }
             }
+            result = max - min;
         }
         return result;
     }
