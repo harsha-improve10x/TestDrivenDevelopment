@@ -24,4 +24,11 @@ public class FindDiscountTest {
         float finalPrice = discount.findDiscount(0, 0);
         assertEquals(0, finalPrice);
     }
+
+    @Test
+    public void givenNegativeNumber_returnsZero() {
+        Discount discount = new Discount();
+        float finalPrice = discount.findDiscount(-21, 20);
+        assertEquals(0, finalPrice);
+    }
 }
