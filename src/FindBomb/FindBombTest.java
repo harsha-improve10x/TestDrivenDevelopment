@@ -29,4 +29,11 @@ public class FindBombTest {
         String result = bomb.findBomb("2345 -123444");
         assertEquals("Relax, there is no Bomb", result);
     }
+
+    @Test
+    public void givenThisGoesBoom_returnRelaxThereIsNoBomb() {
+        Bomb bomb = new Bomb();
+        String result = bomb.findBomb("There is a Boom!!!");
+        assertEquals("Relax, there is no Bomb", result);
+    }
 }
