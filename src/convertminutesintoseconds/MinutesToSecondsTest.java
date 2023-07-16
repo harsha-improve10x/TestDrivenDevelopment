@@ -31,4 +31,11 @@ public class MinutesToSecondsTest {
         int result = minutesToSeconds.convert(-23);
         assertEquals(0, result);
     }
+
+   @Test
+    public void givenTwentyFive_returnThousandFiveHundred() {
+       MinutesToSeconds minutesToSeconds = new MinutesToSeconds();
+       int result = minutesToSeconds.convert(25);
+       assertEquals(1500, result);
+   }
 }
