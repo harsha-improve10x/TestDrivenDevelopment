@@ -39,4 +39,10 @@ public class NameGreetingsTest {
         String result = nameGreetings.helloName("Ed");
         assertEquals("Hello Ed!", result);
     }
+
+    @Test
+    public void givenShree_Harsha_returnHelloShree_Harsha() {
+        String result = nameGreetings.helloName("Shree Harsha");
+        assertEquals("Hello Shree Harsha!", result);
+    }
 }
