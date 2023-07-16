@@ -29,4 +29,11 @@ public class LessThanHundredTest {
         boolean result = lessThanHundred.CheckLessThanHundred(-2, -34);
         assertEquals(true, result);
     }
+
+    @Test
+    public void givenSeventyAndEighty_returnFalse() {
+        LessThanHundred lessThanHundred = new LessThanHundred();
+        boolean result = lessThanHundred.CheckLessThanHundred(77, 80);
+        assertEquals(false, result);
+    }
 }
