@@ -29,4 +29,11 @@ public class NthEvenNumberTest {
         int result = nthEvenNumber.even(-4);
         assertEquals(-1, result);
     }
+
+    @Test
+    public void givenHundred_returnsHundredAndNinetyEight() {
+        NthEvenNumber nthEvenNumber = new NthEvenNumber();
+        int result = nthEvenNumber.even(100);
+        assertEquals(198, result);
+    }
 }
