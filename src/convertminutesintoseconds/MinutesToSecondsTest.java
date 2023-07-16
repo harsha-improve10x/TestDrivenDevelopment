@@ -1,13 +1,22 @@
 package convertminutesintoseconds;
 
-import org.testng.annotations.Test;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class MinutesToSecondsTest {
+    private MinutesToSeconds minutesToSeconds;
 
     @Test
-    public void nothing() {}
+    public void nothing() {
+    }
+
+    @BeforeEach
+    public void setup() {
+        minutesToSeconds = new MinutesToSeconds();
+    }
 
     /*
     Problem: Write a function that takes an integer minute and converts it into seconds.
@@ -20,22 +29,19 @@ public class MinutesToSecondsTest {
 
     @Test
     public void givenEmpty_returnsZero() {
-        MinutesToSeconds minutesToSeconds = new MinutesToSeconds();
         int result = minutesToSeconds.convert(0);
         assertEquals(0, result);
     }
 
     @Test
     public void givenNegativeNumber_returnZero() {
-        MinutesToSeconds minutesToSeconds = new MinutesToSeconds();
         int result = minutesToSeconds.convert(-23);
         assertEquals(0, result);
     }
 
-   @Test
+    @Test
     public void givenTwentyFive_returnThousandFiveHundred() {
-       MinutesToSeconds minutesToSeconds = new MinutesToSeconds();
-       int result = minutesToSeconds.convert(25);
-       assertEquals(1500, result);
-   }
+        int result = minutesToSeconds.convert(25);
+        assertEquals(1500, result);
+    }
 }
