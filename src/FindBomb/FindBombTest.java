@@ -6,4 +6,5 @@ public class FindBombTest {
 
     @Test
     public void nothing(){}
+
 }
