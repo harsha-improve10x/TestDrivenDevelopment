@@ -36,4 +36,11 @@ public class FindBombTest {
         String result = bomb.findBomb("There is a Boom!!!");
         assertEquals("Relax, there is no Bomb", result);
     }
+
+    @Test
+    public void givenHeyDidYouThinkThereIsBOMB_returnDuck() {
+        Bomb bomb = new Bomb();
+        String result = bomb.findBomb("Hey, did you think there is a BOMB?");
+        assertEquals("Duck!", result);
+    }
 }
