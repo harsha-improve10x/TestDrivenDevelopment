@@ -9,6 +9,5 @@ public class ThreeProgrammers {
         int b2 = Math.min(b1, i2);
         diff = a2 - b2;
         return diff;
-
     }
 }
