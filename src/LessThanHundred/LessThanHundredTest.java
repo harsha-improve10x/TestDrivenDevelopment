@@ -15,4 +15,11 @@ public class LessThanHundredTest {
         boolean result = lessThanHundred.CheckLessThanHundred(0, 0);
         assertEquals(true, result);
     }
+
+    @Test
+    public void givenTwentyTwoAnd5_returnTrue() {
+        LessThanHundred lessThanHundred = new LessThanHundred();
+        boolean result = lessThanHundred.CheckLessThanHundred(22, 5);
+        assertEquals(true, result);
+    }
 }
