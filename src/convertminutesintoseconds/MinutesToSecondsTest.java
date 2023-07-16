@@ -24,4 +24,11 @@ public class MinutesToSecondsTest {
         int result = minutesToSeconds.convert(0);
         assertEquals(0, result);
     }
+
+    @Test
+    public void givenNegativeNumber_returnZero() {
+        MinutesToSeconds minutesToSeconds = new MinutesToSeconds();
+        int result = minutesToSeconds.convert(-23);
+        assertEquals(0, result);
+    }
 }
