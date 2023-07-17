@@ -17,7 +17,8 @@ public class EqualityOfThreeValuesTest {
      */
 
     @Test
-    public void nothing() {}
+    public void nothing() {
+    }
 
     @BeforeEach
     public void setup() {
@@ -40,5 +41,11 @@ public class EqualityOfThreeValuesTest {
     public void givenOneOneOne_returnsThree() {
         int result = equality.equal(1, 1, 1);
         assertEquals(3, result);
+    }
+
+    @Test
+    public void givenMinus1Minus3Minus3_returnTwo() {
+        int result = equality.equal(-1, -3, -3);
+        assertEquals(2, result);
     }
 }
