@@ -1,10 +1,12 @@
 package EqualityOfThreeValues;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.Assert.assertEquals;
 
 public class EqualityOfThreeValuesTest {
+    private Equality equality;
 
     /*
     Problem:    Create a function that takes three integer arguments(a, b, c)
@@ -17,10 +19,20 @@ public class EqualityOfThreeValuesTest {
     @Test
     public void nothing() {}
 
+    @BeforeEach
+    public void setup() {
+        equality = new Equality();
+    }
+
     @Test
     public void givenNegativeNumbers_returnZero() {
-        Equality equality = new Equality();
         int result = equality.equal(-2, 1, 0);
         assertEquals(0, result);
+    }
+
+    @Test
+    public void givenThreeFourThree_returnTwo() {
+        int result = equality.equal(3, 4, 3);
+        assertEquals(2, result);
     }
 }
