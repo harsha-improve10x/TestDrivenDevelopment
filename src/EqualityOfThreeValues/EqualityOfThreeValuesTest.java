@@ -2,7 +2,7 @@ package EqualityOfThreeValues;
 
 import org.junit.jupiter.api.Test;
 
-public class EqualityOfThreeValues {
+public class EqualityOfThreeValuesTest {
 
     @Test
     public void nothing() {}
