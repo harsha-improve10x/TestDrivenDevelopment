@@ -35,4 +35,10 @@ public class EqualityOfThreeValuesTest {
         int result = equality.equal(3, 4, 3);
         assertEquals(2, result);
     }
+
+    @Test
+    public void givenOneOneOne_returnsThree() {
+        int result = equality.equal(1, 1, 1);
+        assertEquals(3, result);
+    }
 }
