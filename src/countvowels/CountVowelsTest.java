@@ -32,4 +32,10 @@ public class CountVowelsTest {
         int result = countVowels.count("E");
         assertEquals(1, result);
     }
+
+    @Test
+    public void givenAE_returnTwo() {
+        int result = countVowels.count("AE");
+        assertEquals(2, result);
+    }
 }
