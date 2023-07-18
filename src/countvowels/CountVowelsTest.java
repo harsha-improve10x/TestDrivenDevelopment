@@ -50,4 +50,10 @@ public class CountVowelsTest {
         int result = countVowels.count("palm");
         assertEquals(1, result);
     }
+
+    @Test
+    public void givenAaaZWyuEeeIoioU_returnTwelve() {
+        int result = countVowels.count("AaaZWyuEeeIoioU");
+        assertEquals(12, result);
+    }
 }
