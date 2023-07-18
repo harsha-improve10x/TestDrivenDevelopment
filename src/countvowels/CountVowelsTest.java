@@ -38,4 +38,16 @@ public class CountVowelsTest {
         int result = countVowels.count("AE");
         assertEquals(2, result);
     }
+
+    @Test
+    public void givenCelebration_returnFive() {
+        int result = countVowels.count("celebration");
+        assertEquals(5, result);
+    }
+
+    @Test
+    public void givenPalm_returnOne() {
+        int result = countVowels.count("palm");
+        assertEquals(1, result);
+    }
 }
