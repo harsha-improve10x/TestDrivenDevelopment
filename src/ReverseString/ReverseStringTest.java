@@ -46,4 +46,10 @@ public class ReverseStringTest {
         String reverse = reverseString.reverseString("Hello");
         assertEquals("olleH", reverse);
     }
+
+    @Test
+    public void givenHello_World_returndlroW_olleH() {
+        String reverse = reverseString.reverseString("Hello World");
+        assertEquals("dlroW olleH", reverse);
+    }
 }
