@@ -1,11 +1,12 @@
 package ReverseString;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ReverseStringTest {
-
+    private ReverseString reverseString;
     /*
     Problem: Create a method that takes a string
      as its argument and returns the string in reversed order.
@@ -17,17 +18,26 @@ public class ReverseStringTest {
     @Test
     public void nothing() {}
 
+    @BeforeEach
+    private void setup() {
+        reverseString = new ReverseString();
+    }
+
     @Test
     public void givenNull_returnNull() {
-        ReverseString emptyString = new ReverseString();
-        String reverse = emptyString.reverseString("");
+        String reverse = reverseString.reverseString("");
         assertEquals("", reverse);
     }
 
     @Test
     public void givenH_returnH() {
-        ReverseString emptyString = new ReverseString();
-        String reverse = emptyString.reverseString("H");
+        String reverse = reverseString.reverseString("H");
         assertEquals("H", reverse);
+    }
+
+    @Test
+    public void givenHe_returneH() {
+        String reverse = reverseString.reverseString("He");
+        assertEquals("eH", reverse);
     }
 }
