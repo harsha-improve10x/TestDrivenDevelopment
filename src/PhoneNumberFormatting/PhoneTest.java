@@ -1,10 +1,12 @@
 package PhoneNumberFormatting;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class PhoneTest {
+    private PhoneNumber phoneNumber;
     /*
     Problem: Create a method that takes an array of 10 integers (between 0 and 9) and
     returns a string of those numbers formatted as a phone number (e.g. (555) 555-5555).
@@ -17,10 +19,20 @@ public class PhoneTest {
     public void nothing() {
     }
 
+    @BeforeEach
+    public void setup() {
+        phoneNumber = new PhoneNumber();
+    }
+
     @Test
     public void givenNull_returnNull() {
-        PhoneNumber phoneNumber = new PhoneNumber();
         String result = phoneNumber.numberFormat(new int[]{});
         assertEquals("", result);
+    }
+
+    @Test
+    public void givenOne_returnOne() {
+        String result = phoneNumber.numberFormat(new int[]{1});
+        assertEquals("1", result);
     }
 }
