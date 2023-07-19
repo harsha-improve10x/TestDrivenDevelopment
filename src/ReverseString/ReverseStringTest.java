@@ -40,4 +40,10 @@ public class ReverseStringTest {
         String reverse = reverseString.reverseString("He");
         assertEquals("eH", reverse);
     }
+
+    @Test
+    public void givenHello_returnolleH() {
+        String reverse = reverseString.reverseString("Hello");
+        assertEquals("olleH", reverse);
+    }
 }
