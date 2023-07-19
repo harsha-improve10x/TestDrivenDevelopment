@@ -2,6 +2,8 @@ package PhoneNumberFormatting;
 
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 public class PhoneTest {
     /*
     Problem: Create a method that takes an array of 10 integers (between 0 and 9) and
@@ -13,5 +15,12 @@ public class PhoneTest {
 
     @Test
     public void nothing() {
+    }
+
+    @Test
+    public void givenNull_returnNull() {
+        PhoneNumber phoneNumber = new PhoneNumber();
+        String result = phoneNumber.numberFormat(new int[]{});
+        assertEquals("", result);
     }
 }
