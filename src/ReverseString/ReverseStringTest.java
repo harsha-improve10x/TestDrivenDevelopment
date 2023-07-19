@@ -23,4 +23,11 @@ public class ReverseStringTest {
         String reverse = emptyString.reverseString("");
         assertEquals("", reverse);
     }
+
+    @Test
+    public void givenH_returnH() {
+        ReverseString emptyString = new ReverseString();
+        String reverse = emptyString.reverseString("H");
+        assertEquals("H", reverse);
+    }
 }
