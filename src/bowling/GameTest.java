@@ -69,4 +69,29 @@ public class GameTest {
         rollMany(16, 0);
         assertEquals(22, game.score());
     }
+
+    @Test
+    public void scoreBoard() {
+        game.rolls(7);
+        game.rolls(2);
+        game.rolls(10);
+        game.rolls(6);
+        game.rolls(4);
+        game.rolls(2);
+        game.rolls(5);
+        game.rolls(8);
+        game.rolls(1);
+        game.rolls(2);
+        game.rolls(2);
+        game.rolls(5);
+        game.rolls(5);
+        game.rolls(3);
+        game.rolls(3);
+        game.rolls(4);
+        game.rolls(2);
+        game.rolls(5);
+        game.rolls(5);
+        game.rolls(2);
+        assertEquals(98, game.score());
+    }
 }
