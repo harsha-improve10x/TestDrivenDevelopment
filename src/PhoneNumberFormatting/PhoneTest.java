@@ -32,8 +32,14 @@ public class PhoneTest {
 
     @Test
     public void givenOne_returnOne() {
-        String result = phoneNumber.numberFormat(new int[]{1, 2, 3, 3, 5, 6, 7, 8, 9, 4});
-        assertEquals("(123)356-7894", result);
+        String result = phoneNumber.numberFormat(new int[]{1});
+        assertEquals("(1)-", result);
+    }
+
+    @Test
+    public void givenOneTwoThreeFour_returnFormat() {
+        String result = phoneNumber.numberFormat(new int[]{1, 2, 3, 4});
+        assertEquals("(123)4-", result);
     }
 
     @Test
