@@ -45,13 +45,13 @@ public class MissingNumberTest {
     @Test
     public void givenNumbers_returnZero() {
         int result = missingNumber.findMissingNumber(new int[]{1, 3, 4, 2, 7, 6, 9, 8});
-        assertEquals(0, result);
+        assertEquals(5, result);
     }
 
     @Test
     public void givenNumbers_returnTen() {
-        int result = missingNumber.findMissingNumber(new int[]{1, 3, 4, 2, 7, 6, 9, 8, 5});
-        assertEquals(10, result);
+        int result = missingNumber.findMissingNumber(new int[]{3, 4, 2, 7, 6, 9, 8, 5});
+        assertEquals(1, result);
     }
 
     @Test
