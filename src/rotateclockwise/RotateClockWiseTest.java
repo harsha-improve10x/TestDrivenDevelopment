@@ -34,4 +34,16 @@ public class RotateClockWiseTest {
         int[] result = rotateClockWise.rotate(new int[]{1, 2});
         assertArrayEquals(new int[]{2, 1}, result);
     }
+
+    @Test
+    public void givenNumbers_returnRotatedNumbers() {
+        int[] result = rotateClockWise.rotate(new int[]{1, 2, 3, 4, 5});
+        assertArrayEquals(new int[]{5, 1, 2, 3, 4}, result);
+    }
+
+    @Test
+    public void givenRandomNumbers_returnRotatedNumbers() {
+        int[] result = rotateClockWise.rotate(new int[]{1, 2, 3, 4, 5, -12});
+        assertArrayEquals(new int[]{-12, 1, 2, 3, 4, 5}, result);
+    }
 }
