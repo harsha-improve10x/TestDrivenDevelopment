@@ -9,7 +9,8 @@ public class RotateClockWiseTest {
     private RotateClockWise rotateClockWise;
 
     @Test
-    public void nothing() {}
+    public void nothing() {
+    }
 
     @BeforeEach
     public void setup() {
@@ -29,8 +30,8 @@ public class RotateClockWiseTest {
     }
 
     @Test
-    public void givenNumbers_returnOutput() {
-        int[] result = rotateClockWise.rotate(new int[]{1, 2, 3, 4, 5});
-        assertArrayEquals(new int[]{5, 1, 2, 3, 4}, result);
+    public void givenOneTwo_returnTwoOne() {
+        int[] result = rotateClockWise.rotate(new int[]{1, 2});
+        assertArrayEquals(new int[]{2, 1}, result);
     }
 }
