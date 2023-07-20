@@ -27,12 +27,18 @@ public class PhoneTest {
     @Test
     public void givenNull_returnNull() {
         String result = phoneNumber.numberFormat(new int[]{});
-        assertEquals("", result);
+        assertEquals("() -", result);
     }
 
     @Test
     public void givenOne_returnOne() {
-        String result = phoneNumber.numberFormat(new int[]{1});
-        assertEquals("1", result);
+        String result = phoneNumber.numberFormat(new int[]{1, 2, 3, 3, 5, 6, 7, 8, 9, 4});
+        assertEquals("(123)356-7894", result);
+    }
+
+    @Test
+    public void givenOneTwoThree_returnOneTwoThree() {
+        String result = phoneNumber.numberFormat(new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 9});
+        assertEquals("(123)456-7899", result);
     }
 }
