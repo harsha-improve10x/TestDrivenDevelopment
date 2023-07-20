@@ -1,6 +1,7 @@
 package bowling;
 
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 
@@ -9,6 +10,11 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class GameTest {
     private Game game;
 
+    private void rollMany(int noOfRolls, int pins) {
+        for (int i = 0; i<noOfRolls; i++) {
+            game.rolls(pins);
+        }
+    }
     @BeforeEach
     public void setup() {
       game = new Game();
@@ -28,15 +34,21 @@ public class GameTest {
         assertEquals(0, game.score());
     }
 
-    private void rollMany(int noOfRolls, int pins) {
-        for (int i=0; i<20; i++) {
-            game.rolls(pins);
-        }
-    }
+
 
     @Test
     public void allOnes() {
       rollMany(20, 1);
         assertEquals(20, game.score());
+    }
+
+    @Test
+    public void oneSpare() {
+        //5, 5, 4 = 18
+        game.rolls(5);
+        game.rolls(5);
+        game.rolls(4);
+        rollMany(17, 0);
+        assertEquals(18, game.score());
     }
 }
