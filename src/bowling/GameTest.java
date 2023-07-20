@@ -45,7 +45,6 @@ public class GameTest {
         assertEquals(0, game.score());
     }
 
-
     @Test
     public void allOnes() {
         rollMany(20, 1);
@@ -61,7 +60,6 @@ public class GameTest {
         assertEquals(18, game.score());
     }
 
-
     @Test
     public void oneStrike() {
         //10, 4, 2, = 16
@@ -71,6 +69,4 @@ public class GameTest {
         rollMany(16, 0);
         assertEquals(22, game.score());
     }
-
-
 }
