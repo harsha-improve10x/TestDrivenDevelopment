@@ -7,10 +7,12 @@ public class Palindrome {
             result = false;
         }else if (s == "") {
             result = true;
-        } else if (s == "A") {
-            result = true;
-        } else if (s == "AB") {
-            result = false;
+        } else {
+            StringBuilder stringBuilder = new StringBuilder(s);
+            String reverse = stringBuilder.reverse().toString();
+            if (s.equalsIgnoreCase(reverse)) {
+                result =  true;
+            }
         }
         return result;
     }

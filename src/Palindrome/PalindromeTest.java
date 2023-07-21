@@ -38,4 +38,16 @@ public class PalindromeTest {
         boolean result = palindrome.isPalindrome("AB");
         assertEquals(false, result);
     }
+
+    @Test
+    public void givenAA_returnTrue() {
+        boolean result = palindrome.isPalindrome("AA");
+        assertEquals(true, result);
+    }
+
+    @Test
+    public void givenAbA_returnTrue() {
+        boolean result = palindrome.isPalindrome("AbA");
+        assertEquals(true, result);
+    }
 }
