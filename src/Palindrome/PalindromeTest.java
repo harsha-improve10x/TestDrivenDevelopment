@@ -1,18 +1,29 @@
 package Palindrome;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class PalindromeTest {
-
+    private Palindrome palindrome;
     @Test
     public void nothing() {}
 
+    @BeforeEach
+    public void setup() {
+        palindrome = new Palindrome();
+    }
+
     @Test
     public void givenNull_returnFalse() {
-        Palindrome palindrome = new Palindrome();
-        boolean result = palindrome.isPalindrome("");
+        boolean result = palindrome.isPalindrome(null);
         assertEquals(false, result);
+    }
+
+    @Test
+    public void givenEmpty_returnTrue() {
+        boolean result = palindrome.isPalindrome("");
+        assertEquals(true, result);
     }
 }
