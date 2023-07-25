@@ -2,22 +2,40 @@ package Encryption;
 
 public class Encryption {
     public String encrypt(String word) {
-        String output = "aca";
+        String output = "";
+        String reverse = "";
         if (word == null || word.isEmpty()) {
-            return output;
+            return output + "aca";
         } else {
-            if (word.equals("a")) {
-                return "0" + output;
-            } else if (word.equals("e")) {
-                return "1" + output;
-            } else if (word.equals("i")) {
-                return "2" + output;
-            } else if (word.equals("o")) {
-                return "3" + output;
-            } else if (word.equals("u")) {
-                return "4" + output;
+            for (int i = word.length() - 1; i >= 0; i--) {
+                reverse += word.charAt(i);
             }
-            return word + output;
+            char[] replacedVowels = new char[reverse.length()];
+            for (int i = 0; i < reverse.length(); i++) {
+                char ch = reverse.charAt(i);
+                switch (ch) {
+                    case 'a':
+                        replacedVowels[i] = '0';
+                        break;
+                    case 'e':
+                        replacedVowels[i] = '1';
+                        break;
+                    case 'i':
+                        replacedVowels[i] = '2';
+                        break;
+                    case 'o':
+                        replacedVowels[i] = '3';
+                        break;
+                    case 'u':
+                        replacedVowels[i] = '4';
+                        break;
+                    default:
+                        replacedVowels[i] = ch;
+                }
+            }
+            String replace = new String(replacedVowels);
+            output = replace + "aca";
+            return output;
         }
     }
 }

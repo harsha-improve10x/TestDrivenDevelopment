@@ -68,4 +68,10 @@ public class EncryptionTest {
         String result = encryption.encrypt("u");
         assertEquals("4aca", result);
     }
+
+    @Test
+    public void givenAb_returnB0aca() {
+        String result = encryption.encrypt("ab");
+        assertEquals("b0aca", result);
+    }
 }
