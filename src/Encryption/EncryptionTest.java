@@ -32,4 +32,10 @@ public class EncryptionTest {
         String result = encryption.encrypt("b");
         assertEquals("baca", result);
     }
+
+    @Test
+    public void givenX_returnXaca() {
+        String result = encryption.encrypt("x");
+        assertEquals("xaca", result);
+    }
 }
