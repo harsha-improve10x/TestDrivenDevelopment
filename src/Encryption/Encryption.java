@@ -2,6 +2,10 @@ package Encryption;
 
 public class Encryption {
     public String encrypt(String word) {
-        return "aca";
+        String output = "aca";
+        if (word == null || word.isEmpty()) {
+            return output;
+        }
+        return word + output;
     }
 }

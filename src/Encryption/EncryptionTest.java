@@ -23,8 +23,13 @@ public class EncryptionTest {
 
     @Test
     public void givenEmpty_returnAca() {
-        String result = encryption.encrypt(null);
+        String result = encryption.encrypt("");
         assertEquals("aca", result);
     }
 
+    @Test
+    public void givenB_returnBaca() {
+        String result = encryption.encrypt("b");
+        assertEquals("baca", result);
+    }
 }
