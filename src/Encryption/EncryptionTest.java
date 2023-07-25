@@ -44,4 +44,10 @@ public class EncryptionTest {
         String result = encryption.encrypt("a");
         assertEquals("0aca", result);
     }
+
+    @Test
+    public void givenE_return1Aca() {
+        String result = encryption.encrypt("e");
+        assertEquals("1aca", result);
+    }
 }

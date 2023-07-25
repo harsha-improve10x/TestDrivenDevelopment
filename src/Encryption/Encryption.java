@@ -8,8 +8,10 @@ public class Encryption {
         } else {
             if (word.contains("a")) {
                 return "0" + output;
+            } else if (word.contains("e")) {
+                return "1" + output;
             }
-                return word + output;
+            return word + output;
         }
     }
 }
