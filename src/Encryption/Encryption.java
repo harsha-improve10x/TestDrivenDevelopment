@@ -6,10 +6,12 @@ public class Encryption {
         if (word == null || word.isEmpty()) {
             return output;
         } else {
-            if (word.contains("a")) {
+            if (word.equals("a")) {
                 return "0" + output;
-            } else if (word.contains("e")) {
+            } else if (word.equals("e")) {
                 return "1" + output;
+            } else if (word.equals("i")) {
+                return "2" + output;
             }
             return word + output;
         }

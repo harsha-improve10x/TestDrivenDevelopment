@@ -50,4 +50,10 @@ public class EncryptionTest {
         String result = encryption.encrypt("e");
         assertEquals("1aca", result);
     }
+
+    @Test
+    public void givenI_return2Aca() {
+        String result = encryption.encrypt("i");
+        assertEquals("2aca", result);
+    }
 }
