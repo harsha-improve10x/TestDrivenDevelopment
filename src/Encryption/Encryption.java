@@ -5,7 +5,11 @@ public class Encryption {
         String output = "aca";
         if (word == null || word.isEmpty()) {
             return output;
+        } else {
+            if (word.contains("a")) {
+                return "0" + output;
+            }
+                return word + output;
         }
-        return word + output;
     }
 }
