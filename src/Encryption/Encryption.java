@@ -14,6 +14,8 @@ public class Encryption {
                 return "2" + output;
             } else if (word.equals("o")) {
                 return "3" + output;
+            } else if (word.equals("u")) {
+                return "4" + output;
             }
             return word + output;
         }
