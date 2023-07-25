@@ -80,4 +80,16 @@ public class EncryptionTest {
         String result = encryption.encrypt("aba");
         assertEquals("0b0aca", result);
     }
+
+    @Test
+    public void givenBanana_return0n0n0baca() {
+        String result = encryption.encrypt("banana");
+        assertEquals("0n0n0baca", result);
+    }
+
+    @Test
+    public void givenApple_return1lpp0aca() {
+        String result = encryption.encrypt("apple");
+        assertEquals("1lpp0aca", result);
+    }
 }
