@@ -10,32 +10,23 @@ public class Encryption {
             for (int i = word.length() - 1; i >= 0; i--) {
                 reverse += word.charAt(i);
             }
-            char[] replacedVowels = new char[reverse.length()];
+            char[] replacedVowels = reverse.toCharArray();
             for (int i = 0; i < reverse.length(); i++) {
-                char ch = reverse.charAt(i);
-                switch (ch) {
-                    case 'a':
-                        replacedVowels[i] = '0';
-                        break;
-                    case 'e':
-                        replacedVowels[i] = '1';
-                        break;
-                    case 'i':
-                        replacedVowels[i] = '2';
-                        break;
-                    case 'o':
-                        replacedVowels[i] = '3';
-                        break;
-                    case 'u':
-                        replacedVowels[i] = '4';
-                        break;
-                    default:
-                        replacedVowels[i] = ch;
+                if (reverse.charAt(i) == 'a') {
+                    replacedVowels[i] = '0';
+                } else if (reverse.charAt(i) == 'e') {
+                    replacedVowels[i] = '1';
+                } else if (reverse.charAt(i) == 'i') {
+                    replacedVowels[i] = '2';
+                } else if (reverse.charAt(i) == 'o') {
+                    replacedVowels[i] = '3';
+                } else if (reverse.charAt(i) == 'u') {
+                    replacedVowels[i] = '4';
                 }
             }
-            String replace = new String(replacedVowels);
+            String replace = String.valueOf(replacedVowels);
             output = replace + "aca";
+            }
             return output;
         }
     }
-}
