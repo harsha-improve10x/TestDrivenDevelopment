@@ -74,4 +74,10 @@ public class EncryptionTest {
         String result = encryption.encrypt("ab");
         assertEquals("b0aca", result);
     }
+
+    @Test
+    public void givenAba_return0B0aca() {
+        String result = encryption.encrypt("aba");
+        assertEquals("0b0aca", result);
+    }
 }
