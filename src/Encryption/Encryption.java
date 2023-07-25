@@ -26,7 +26,7 @@ public class Encryption {
             }
             String replace = String.valueOf(replacedVowels);
             output = replace + "aca";
-            }
-            return output;
         }
+        return output;
     }
+}
