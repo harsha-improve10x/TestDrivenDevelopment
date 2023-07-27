@@ -59,6 +59,6 @@ public class ObstacleTest {
         Obstacle obstacle = new Obstacle("Fireball", 30);
         Player player = new Player("Name");
         obstacle.collide(player);
-        assertEquals(100, player.getHealth());
+        assertEquals(70, player.getHealth());
     }
 }

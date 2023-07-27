@@ -16,5 +16,4 @@ public class Coin {
 
     public class InvalidCoinValueException extends RuntimeException{
     }
-
 }
