@@ -82,6 +82,30 @@ public class EncryptionTest {
     }
 
     @Test
+    public void giveneba_return0B1aca() {
+        String result = encryption.encrypt("eba");
+        assertEquals("0b1aca", result);
+    }
+
+    @Test
+    public void givenIbae_return10b2aca() {
+        String result = encryption.encrypt("ibae");
+        assertEquals("10b2aca", result);
+    }
+
+    @Test
+    public void givenOba_return0b3aca() {
+        String result = encryption.encrypt("oba");
+        assertEquals("0b3aca", result);
+    }
+
+    @Test
+    public void givenUba_return0b4aca() {
+        String result = encryption.encrypt("uba");
+        assertEquals("0b4aca", result);
+    }
+
+    @Test
     public void givenBanana_return0n0n0baca() {
         String result = encryption.encrypt("banana");
         assertEquals("0n0n0baca", result);
