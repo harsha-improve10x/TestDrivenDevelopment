@@ -15,4 +15,11 @@ public class RockPaperScissorTest {
         String result = rpsGame.rps(null, null);
         assertEquals("", result);
     }
+
+    @Test
+    public void givenOneEmptyOneNull_returnEmpty() {
+        RpsGame rpsGame = new RpsGame();
+        String result = rpsGame.rps("", null);
+        assertEquals("", result);
+    }
 }
