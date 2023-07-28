@@ -7,6 +7,8 @@ public class RpsGame {
             result = "";
         } else if (player1.equalsIgnoreCase("Rock") && player2.equalsIgnoreCase("paper")) {
             result = "Player2 Wins";
+        } else if (player1.equalsIgnoreCase("Paper") && player2.equalsIgnoreCase("Rock")) {
+            result = "Player1 Wins";
         }
         return result;
     }

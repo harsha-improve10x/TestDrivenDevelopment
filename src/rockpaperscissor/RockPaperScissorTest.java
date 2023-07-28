@@ -75,4 +75,9 @@ public class RockPaperScissorTest {
         assertEquals("Player2 Wins", result);
     }
 
+    @Test
+    public void givenPaperRock_returnPlayer1Wins() {
+        String result = rpsGame.rps("Paper", "rock");
+        assertEquals("Player1 Wins", result);
+    }
 }
