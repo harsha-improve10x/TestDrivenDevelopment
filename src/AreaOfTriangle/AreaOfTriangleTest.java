@@ -45,4 +45,10 @@ public class AreaOfTriangleTest {
         int result = areaOfTriangle.findTriArea(7, 4);
         assertEquals(14, result);
     }
+
+    @Test
+    public void givenTenAndTen_returnFifty() {
+        int result = areaOfTriangle.findTriArea(10, 10);
+        assertEquals(50, result);
+    }
 }
