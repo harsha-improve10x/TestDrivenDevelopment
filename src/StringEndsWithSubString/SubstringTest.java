@@ -44,4 +44,10 @@ public class SubstringTest {
         boolean result = substring.checkEnding("abc", "d");
         assertEquals(false, result);
     }
+
+    @Test
+    public void givenConventionAndTio_returnFalse() {
+        boolean result = substring.checkEnding("convention", "tio");
+        assertEquals(false, result);
+    }
 }
