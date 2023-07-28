@@ -17,13 +17,19 @@ public class SubstringTest {
     }
     @Test
     public void givenNull_returnEmpty() {
-        String result = substring.checkEnding(null, null);
-        assertEquals("", result);
+        boolean result = substring.checkEnding(null, null);
+        assertEquals(true, result);
     }
 
     @Test
     public void givenEmpty_returnEmpty() {
-        String result = substring.checkEnding("", "");
-        assertEquals("", result);
+        boolean result = substring.checkEnding("", "");
+        assertEquals(true, result);
+    }
+
+    @Test
+    public void givenA_returnTrue() {
+        boolean result = substring.checkEnding("a", "a");
+        assertEquals(true, result);
     }
 }
