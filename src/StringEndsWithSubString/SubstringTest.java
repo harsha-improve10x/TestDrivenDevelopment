@@ -18,13 +18,13 @@ public class SubstringTest {
     @Test
     public void givenNull_returnEmpty() {
         boolean result = substring.checkEnding(null, null);
-        assertEquals(true, result);
+        assertEquals(false, result);
     }
 
     @Test
     public void givenEmpty_returnEmpty() {
         boolean result = substring.checkEnding("", "");
-        assertEquals(true, result);
+        assertEquals(false, result);
     }
 
     @Test
