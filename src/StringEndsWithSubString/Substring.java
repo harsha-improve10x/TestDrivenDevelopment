@@ -9,7 +9,7 @@ public class Substring {
             result = false;
         } else if (s1 == null || s2 == null) {
             result = false;
-        } else if (s1.endsWith(s2)) {
+        } else if (s1.endsWith(s2.toLowerCase())) {
             result = true;
         }
         return result;

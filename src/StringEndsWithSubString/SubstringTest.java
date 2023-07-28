@@ -50,4 +50,11 @@ public class SubstringTest {
         boolean result = substring.checkEnding("convention", "tio");
         assertEquals(false, result);
     }
+
+    @Test
+    public void givenFeminineAndNine_returnTrue() {
+        boolean result = substring.checkEnding("Feminine", "Nine");
+        assertEquals(true, result);
+    }
+
 }
