@@ -15,4 +15,11 @@ public class AreaOfTriangleTest {
         int result = areaOfTriangle.findTriArea(0, 0);
         assertEquals(0, result);
     }
+
+    @Test
+    public void givenMinusOneZero_returnZero() {
+        AreaOfTriangle areaOfTriangle = new AreaOfTriangle();
+        int result = areaOfTriangle.findTriArea(-1, 0);
+        assertEquals(Integer.MIN_VALUE, result);
+    }
 }
