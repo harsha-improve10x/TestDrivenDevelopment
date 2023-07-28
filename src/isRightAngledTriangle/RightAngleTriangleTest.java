@@ -33,4 +33,10 @@ public class RightAngleTriangleTest {
         boolean result = rightAngleTriangle.isRightTriangle(145, 105, 100);
         assertEquals(false, result);
     }
+
+    @Test
+    public void givenTwelveFiveAndThirteen_returnTrue() {
+        boolean result = rightAngleTriangle.isRightTriangle(12, 5, 13);
+        assertEquals(true, result);
+    }
 }
