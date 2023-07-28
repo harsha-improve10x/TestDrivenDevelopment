@@ -5,6 +5,8 @@ public class RpsGame {
         String result = "";
         if (player1 == null || player2 == null) {
             result = "";
+        } else if (player1 == "" || player2 == "") {
+            result = "";
         } else if (player1.equalsIgnoreCase("Rock") && player2.equalsIgnoreCase("paper") ||
         player1.equalsIgnoreCase("Scissor") && player2.equalsIgnoreCase("rock") ||
         player1.equalsIgnoreCase("paper") && player2.equalsIgnoreCase("scissor")) {
@@ -13,6 +15,8 @@ public class RpsGame {
         player1.equalsIgnoreCase("Rock") && player2.equalsIgnoreCase("Scissor") ||
         player1.equalsIgnoreCase("Scissor") && player2.equalsIgnoreCase("paper")) {
             result = "Player1 Wins";
+        } else if (player1.equalsIgnoreCase(player2)) {
+            result = "Tie";
         }
         return result;
     }

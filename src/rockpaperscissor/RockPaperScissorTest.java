@@ -104,4 +104,10 @@ public class RockPaperScissorTest {
         String result = rpsGame.rps("Scissor", "Paper");
         assertEquals("Player1 Wins", result);
     }
+
+    @Test
+    public void givenBothRock_returnTie() {
+        String result = rpsGame.rps("rock", "rock");
+        assertEquals("Tie", result);
+    }
 }
