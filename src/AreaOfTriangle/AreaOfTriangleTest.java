@@ -17,9 +17,16 @@ public class AreaOfTriangleTest {
     }
 
     @Test
-    public void givenMinusOneZero_returnZero() {
+    public void givenMinusOneZero_returnMinValue() {
         AreaOfTriangle areaOfTriangle = new AreaOfTriangle();
         int result = areaOfTriangle.findTriArea(-1, 0);
+        assertEquals(Integer.MIN_VALUE, result);
+    }
+
+    @Test
+    public void givenMinusOneMinusTwo_returnMinValue() {
+        AreaOfTriangle areaOfTriangle = new AreaOfTriangle();
+        int result = areaOfTriangle.findTriArea(-1, -2);
         assertEquals(Integer.MIN_VALUE, result);
     }
 }
