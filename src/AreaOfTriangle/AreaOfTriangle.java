@@ -2,14 +2,14 @@ package AreaOfTriangle;
 
 public class AreaOfTriangle {
     public int findTriArea(int base, int height) {
-        int result = 0;
+        int area = 0;
         if (base < 0 || height < 0) {
-            result = -1;
+            area = -1;
         }else if (base == 0 || height == 0) {
-            result = 0;
+            area = 0;
         } else if (base > 0 || height > 0) {
-            result = ((base * height)/2);
+            area = ((base * height)/2);
         }
-        return result;
+        return area;
     }
 }
