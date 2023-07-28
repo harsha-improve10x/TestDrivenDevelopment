@@ -32,4 +32,10 @@ public class SubstringTest {
         boolean result = substring.checkEnding("a", "a");
         assertEquals(true, result);
     }
+
+    @Test
+    public void givenAb_returnTrue() {
+        boolean result = substring.checkEnding("ab", "b");
+        assertEquals(true, result);
+    }
 }
