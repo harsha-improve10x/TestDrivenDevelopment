@@ -22,6 +22,12 @@ public class ArrayIsSortedTest {
     }
 
     @Test
+    public void givenEmpty_returnTrue() {
+        boolean result = sortArray.isArraySorted(new int[]{});
+        assertEquals(true, result);
+    }
+
+    @Test
     public void givenZero_returnTrue() {
         boolean result = sortArray.isArraySorted(new int[]{0});
         assertEquals(true, result);
