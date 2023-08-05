@@ -45,4 +45,16 @@ public class SecondLargestNumberArrayTest {
         int result = secondLargest.findSecondLargest(new int[]{1, 2});
         assertEquals(1, result);
     }
+
+    @Test
+    public void givenOneTwoThree_returnTwo() {
+        int result = secondLargest.findSecondLargest(new int[]{1, 2, 3});
+        assertEquals(2, result);
+    }
+
+    @Test
+    public void givenFourOneTwoThree_returnThree() {
+        int result = secondLargest.findSecondLargest(new int[]{4, 1, 2, 3});
+        assertEquals(3, result);
+    }
 }
