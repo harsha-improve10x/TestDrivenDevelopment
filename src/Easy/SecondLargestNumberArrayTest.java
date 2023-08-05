@@ -28,4 +28,9 @@ public class SecondLargestNumberArrayTest {
         assertEquals(0, result);
     }
 
+    @Test
+    public void givenZero_returnZero() {
+        int result = secondLargest.findSecondLargest(new int[]{0});
+        assertEquals(0, result);
+    }
 }
