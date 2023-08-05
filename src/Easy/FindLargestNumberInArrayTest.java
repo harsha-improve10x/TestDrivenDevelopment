@@ -24,7 +24,13 @@ public class FindLargestNumberInArrayTest {
 
     @Test
     public void givenEmpty_returnZero() {
-       int result = largestNumberArray.findLargest(new int[]{});
-       assertEquals(0, result);
+        int result = largestNumberArray.findLargest(new int[]{});
+        assertEquals(0, result);
+    }
+
+    @Test
+    public void givenZero_returnZero() {
+        int result = largestNumberArray.findLargest(new int[]{0});
+        assertEquals(0, result);
     }
 }
