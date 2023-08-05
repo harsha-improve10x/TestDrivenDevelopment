@@ -38,4 +38,10 @@ public class ArrayIsSortedTest {
         boolean result = sortArray.isArraySorted(new int[]{1, 2});
         assertEquals(true, result);
     }
+
+    @Test
+    public void givenThreeOneTwo_returnFalse() {
+        boolean result = sortArray.isArraySorted(new int[]{3, 1, 2});
+        assertEquals(false, result);
+    }
 }
