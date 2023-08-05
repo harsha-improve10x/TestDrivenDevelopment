@@ -15,4 +15,11 @@ public class ArrayIsSortedTest {
         boolean result = sortArray.isArraySorted(null);
         assertEquals(false, result);
     }
+
+    @Test
+    public void givenEmpty_returnTrue() {
+        SortArray sortArray = new SortArray();
+        boolean result = sortArray.isArraySorted(new int[]{});
+        assertEquals(true, result);
+    }
 }
