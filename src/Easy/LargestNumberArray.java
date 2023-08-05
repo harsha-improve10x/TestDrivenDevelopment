@@ -9,6 +9,13 @@ public class LargestNumberArray {
             largest = 0;
         } else if (arr.length == 1) {
             largest = arr[0];
+        } else {
+            largest = arr[0];
+            for (int i = 1; i<arr.length; i++) {
+                if (arr[i] > largest) {
+                    largest = arr[i];
+                }
+            }
         }
         return largest;
     }
