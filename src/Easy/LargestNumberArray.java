@@ -10,8 +10,7 @@ public class LargestNumberArray {
         } else if (arr.length == 1) {
             largest = arr[0];
         } else {
-            largest = arr[0];
-            for (int i = 1; i<arr.length; i++) {
+            for (int i = 0; i<arr.length; i++) {
                 if (arr[i] > largest) {
                     largest = arr[i];
                 }
