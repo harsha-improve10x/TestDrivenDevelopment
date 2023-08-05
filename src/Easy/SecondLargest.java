@@ -9,6 +9,15 @@ public class SecondLargest {
             secondLargest = 0;
         } else if (arr.length == 1) {
             secondLargest = Integer.MIN_VALUE;
+        } else {
+            int largest = arr[0];
+            secondLargest = Integer.MIN_VALUE;
+            for (int i = 0; i < arr.length; i++) {
+                if (arr[i] > largest) {
+                    secondLargest = largest;
+                    largest = arr[i];
+                }
+            }
         }
         return secondLargest;
     }

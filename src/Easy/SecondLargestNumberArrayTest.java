@@ -36,7 +36,13 @@ public class SecondLargestNumberArrayTest {
 
     @Test
     public void givenOne_returnIntegerMinValue() {
-        int result = secondLargest.findSecondLargest(new int[]{0});
+        int result = secondLargest.findSecondLargest(new int[]{1});
         assertEquals(Integer.MIN_VALUE, result);
+    }
+
+    @Test
+    public void givenOneTwo_returnOne() {
+        int result = secondLargest.findSecondLargest(new int[]{1, 2});
+        assertEquals(1, result);
     }
 }
