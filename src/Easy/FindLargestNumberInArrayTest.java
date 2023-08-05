@@ -51,4 +51,10 @@ public class FindLargestNumberInArrayTest {
         int result = largestNumberArray.findLargest(new int[]{1, 2, 3});
         assertEquals(3, result);
     }
+
+    @Test
+    public void givenFourOneTwoThree_returnThree() {
+        int result = largestNumberArray.findLargest(new int[]{4, 1, 2, 3});
+        assertEquals(4, result);
+    }
 }
