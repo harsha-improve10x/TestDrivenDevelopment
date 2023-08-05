@@ -7,6 +7,8 @@ public class SortArray {
             result = false;
         } else if (arr.length == 0) {
             result = true;
+        } else if (arr.length == 1) {
+            result = true;
         }
         return result;
     }
