@@ -9,7 +9,8 @@ public class RemoveDuplicateElements {
             return result;
         } else if (arr.length == 1) {
             return arr;
+        } else {
+            return arr;
         }
-        return result;
     }
 }

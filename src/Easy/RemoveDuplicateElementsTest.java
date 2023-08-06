@@ -39,4 +39,10 @@ public class RemoveDuplicateElementsTest {
         int[] result = removeDuplicateElements.remove(new int[]{1});
         assertArrayEquals(new int[]{1}, result);
     }
+
+    @Test
+    public void givenOneTwo_returnOneTwo() {
+        int[] result = removeDuplicateElements.remove(new int[]{1, 2});
+        assertArrayEquals(new int[]{1, 2}, result);
+    }
 }
