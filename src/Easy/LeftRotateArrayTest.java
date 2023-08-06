@@ -27,4 +27,10 @@ public class LeftRotateArrayTest {
         int[] result = leftRotateArray.rotate(new int[]{});
         assertArrayEquals(new int[]{0}, result);
     }
+
+    @Test
+    public void givenZero_returnZero() {
+        int[] result = leftRotateArray.rotate(new int[]{0});
+        assertArrayEquals(new int[]{0}, result);
+    }
 }
