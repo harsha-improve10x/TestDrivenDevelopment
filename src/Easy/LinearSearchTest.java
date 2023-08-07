@@ -38,4 +38,10 @@ public class LinearSearchTest {
         int result = linearSearch.findNumber(new int[]{1, 2, 3, 5, 7}, 7);
         assertEquals(4, result);
     }
+
+    @Test
+    public void givenOneTwoThreeFourFiveSixSevenEight_findFive_returnFour() {
+        int result = linearSearch.findNumber(new int[]{1, 2, 3, 4, 5, 6, 7}, 5);
+        assertEquals(4, result);
+    }
 }
