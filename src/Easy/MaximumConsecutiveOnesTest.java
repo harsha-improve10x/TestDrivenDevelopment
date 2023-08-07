@@ -28,7 +28,13 @@ public class MaximumConsecutiveOnesTest {
     }
 
     @Test
-    public void givenOne_returnZero() {
+    public void givenOne_returnOne() {
+        int result = maximumConsecutiveOne.maximum(new int[]{1});
+        assertEquals(1, result);
+    }
+
+    @Test
+    public void givenOneOneTwo_returnTwo() {
         int result = maximumConsecutiveOne.maximum(new int[]{1});
         assertEquals(1, result);
     }
