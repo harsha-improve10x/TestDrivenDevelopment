@@ -32,4 +32,10 @@ public class NumberAppearsOnceTest {
         int result = numberAppearsOnce.countAppears(new int[]{1});
         assertEquals(1, result);
     }
+
+    @Test
+    public void givenOneOneTwo_returnTwo() {
+        int result = numberAppearsOnce.countAppears(new int[]{1, 1, 2});
+        assertEquals(2, result);
+    }
 }
