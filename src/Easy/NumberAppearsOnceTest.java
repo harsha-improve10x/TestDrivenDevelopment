@@ -38,4 +38,10 @@ public class NumberAppearsOnceTest {
         int result = numberAppearsOnce.countAppears(new int[]{1, 1, 2});
         assertEquals(2, result);
     }
+
+    @Test
+    public void givenFourOneOneTwoTwo_returnFour() {
+        int result = numberAppearsOnce.countAppears(new int[]{4, 1, 1, 2, 2});
+        assertEquals(4, result);
+    }
 }
