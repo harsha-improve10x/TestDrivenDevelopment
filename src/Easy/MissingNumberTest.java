@@ -27,4 +27,10 @@ public class MissingNumberTest {
         int missing = missingNumberArray.findMissingNumber(new int[]{}, 0);
         assertEquals(0, missing);
     }
+
+    @Test
+    public void givenOne_returnOne() {
+        int missing = missingNumberArray.findMissingNumber(new int[]{1}, 1);
+        assertEquals(1, missing);
+    }
 }
