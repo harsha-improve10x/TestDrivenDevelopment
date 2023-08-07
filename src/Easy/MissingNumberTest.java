@@ -39,4 +39,10 @@ public class MissingNumberTest {
         int missing = missingNumberArray.findMissingNumber(new int[]{1, 3}, 3);
         assertEquals(2, missing);
     }
+
+    @Test
+    public void givenOneThreeFourFive_returnTwo() {
+        int missing = missingNumberArray.findMissingNumber(new int[]{1, 3, 4, 5}, 5);
+        assertEquals(2, missing);
+    }
 }
