@@ -26,4 +26,10 @@ public class NumberAppearsOnceTest {
         int result = numberAppearsOnce.countAppears(new int[]{});
         assertEquals(0, result);
     }
+
+    @Test
+    public void givenOne_returnOne() {
+        int result = numberAppearsOnce.countAppears(new int[]{1});
+        assertEquals(1, result);
+    }
 }
