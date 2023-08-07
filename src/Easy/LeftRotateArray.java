@@ -9,7 +9,13 @@ public class LeftRotateArray {
             return result;
         } else if (arr.length == 1) {
             return arr;
+        } else {
+            int temp = arr[0];
+            for (int i = 1; i < arr.length; i++) {
+                arr[i-1] = arr[i];
+            }
+            arr[arr.length-1] = temp;
         }
-        return result;
+        return arr;
     }
 }

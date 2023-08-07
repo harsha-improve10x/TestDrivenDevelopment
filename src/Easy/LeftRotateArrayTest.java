@@ -39,4 +39,16 @@ public class LeftRotateArrayTest {
         int[] result = leftRotateArray.rotate(new int[]{1});
         assertArrayEquals(new int[]{1}, result);
     }
+
+    @Test
+    public void givenOneTwo_returnTwoOne() {
+        int[] result = leftRotateArray.rotate(new int[]{1, 2});
+        assertArrayEquals(new int[]{2, 1}, result);
+    }
+
+    @Test
+    public void givenOneTwoThreeFourFive_returnFiveOneTwoThreeFour() {
+        int[] result = leftRotateArray.rotate(new int[]{1, 2, 3, 4, 5});
+        assertArrayEquals(new int[]{2, 3, 4, 5, 1}, result);
+    }
 }
