@@ -17,7 +17,17 @@ public class Union {
                 list.add(a2);
             }
             return list;
-        } else {
+        }else if (arr1 !=null  && arr2 == null) {
+            ArrayList<Integer> list2 = new ArrayList<>();
+            HashSet<Integer> integerHashSet1 = new HashSet<>();
+            for (int i = 0; i < arr1.length; i++) {
+                integerHashSet1.add(arr1[i]);
+            }
+            for (int a2 : integerHashSet1) {
+                list2.add(a2);
+            }
+            return list2;
+        }else {
             ArrayList<Integer> unionList = new ArrayList();
             HashSet<Integer> set = new HashSet<>();
             for (int i = 0; i < arr1.length; i++) {

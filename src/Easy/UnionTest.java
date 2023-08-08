@@ -31,6 +31,24 @@ public class UnionTest {
     }
 
     @Test
+    public void givenOneNull_returnOne() {
+        ArrayList<Integer> list = union.makeUnion(new int[]{1}, null);
+        ArrayList<Integer> expected = new ArrayList<>();
+        expected.add(1);
+        assertEquals(expected, list);
+    }
+
+    @Test
+    public void givenNullOneTwoThree_returnOneTwoThree() {
+        ArrayList<Integer> list = union.makeUnion(null, new int[]{1, 2, 3});
+        ArrayList<Integer> expected = new ArrayList<>();
+        expected.add(1);
+        expected.add(2);
+        expected.add(3);
+        assertEquals(expected, list);
+    }
+
+    @Test
     public void givenEmptyEmpty_returnEmpty() {
        ArrayList<Integer> list = union.makeUnion(new int[]{}, new int[]{});
        assertEquals(new ArrayList<Integer>(){}, list);
