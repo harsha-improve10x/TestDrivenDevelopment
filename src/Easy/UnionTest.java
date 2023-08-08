@@ -29,6 +29,14 @@ public class UnionTest {
     }
 
     @Test
+    public void givenOneElement_returnOne() {
+        ArrayList<Integer> list = union.makeUnion(new int[]{1}, new int[]{});
+        ArrayList<Integer> expected = new ArrayList<>();
+        expected.add(1);
+        assertEquals(expected, list);
+    }
+
+    @Test
     public void givenOneOneElement_returnOne() {
         ArrayList<Integer> list = union.makeUnion(new int[]{1}, new int[]{1});
         ArrayList<Integer> expected = new ArrayList<>();
