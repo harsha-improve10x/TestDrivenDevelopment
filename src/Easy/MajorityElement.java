@@ -7,11 +7,18 @@ public class MajorityElement {
             return result;
         } else if (arr.length == 1) {
             result = arr[0];
-        } else if (arr.length == 2) {
-            if (arr[0] != arr[1]) {
-                result = -1;
-            } else {
-                result = arr[0];
+        } else {
+            int n = arr.length/2;
+            int count = 0;
+            for (int i = 0; i < arr.length; i++) {
+                for (int j = 0; j < arr.length; j++) {
+                    if (arr[j] == arr[i]) {
+                        count++;
+                    }
+                }
+                if (count > n) {
+                    result = arr[i];
+                }
             }
         }
         return result;
