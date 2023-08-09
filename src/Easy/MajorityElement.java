@@ -18,6 +18,8 @@ public class MajorityElement {
                 }
                 if (count > n) {
                     result = arr[i];
+                } else {
+                    return -1;
                 }
             }
         }

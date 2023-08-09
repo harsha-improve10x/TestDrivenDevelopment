@@ -37,12 +37,24 @@ public class MajorityElementTest {
     @Test
     public void givenOneTwo_returnMinusOne() {
         int result = majorityElement.findMajorityElement(new int[]{1, 2});
-        assertEquals(2, result);
+        assertEquals(-1, result);
     }
 
     @Test
     public void givenOneTwoOne_returnOne() {
         int result = majorityElement.findMajorityElement(new int[]{1, 2, 1});
         assertEquals(1, result);
+    }
+
+    @Test
+    public void givenOneTwoThree_returnOne() {
+        int result = majorityElement.findMajorityElement(new int[]{1, 2, 3});
+        assertEquals(-1, result);
+    }
+
+    @Test
+    public void givenTwoTwoOneOneOneTwoTwo_returnTwo() {
+        int result = majorityElement.findMajorityElement(new int[]{2, 2, 1, 1, 1, 2, 2});
+        assertEquals(2, result);
     }
 }
