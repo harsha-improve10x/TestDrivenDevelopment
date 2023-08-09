@@ -29,6 +29,12 @@ public class UnionTest {
     }
 
     @Test
+    public void givenEmptyNull_returnEmpty() {
+        ArrayList<Integer> list = union.makeUnion(new int[]{}, null);
+        assertEquals(new ArrayList<Integer>(){}, list);
+    }
+
+    @Test
     public void givenNullOne_returnOne() {
         ArrayList<Integer> list = union.makeUnion(null, new int[]{1});
         ArrayList<Integer> expected = new ArrayList<>();
