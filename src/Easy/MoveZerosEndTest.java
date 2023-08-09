@@ -15,4 +15,11 @@ public class MoveZerosEndTest {
         int[] result = moveZerosEnd.move(null);
         assertArrayEquals(new int[]{}, result);
     }
+
+    @Test
+    public void givenEmpty_returnEmpty() {
+        MoveZerosEnd moveZerosEnd = new MoveZerosEnd();
+        int[] result = moveZerosEnd.move(new int[]{});
+        assertArrayEquals(new int[]{}, result);
+    }
 }
