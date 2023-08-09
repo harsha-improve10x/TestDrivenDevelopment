@@ -50,4 +50,11 @@ public class MoveZerosEndTest {
         int[] result = moveZerosEnd.move(new int[]{3, 1, 2});
         assertArrayEquals(new int[]{3, 1, 2,}, result);
     }
+
+    @Test
+    public void givenZeroOneZeroFiveThreeZeroZeroTwo_returnOneFiveThreeTwoZeroZeroZeroZero() {
+        MoveZerosEnd moveZerosEnd = new MoveZerosEnd();
+        int[] result = moveZerosEnd.move(new int[]{0, 1, 0, 5, 3, 0, 0, 2});
+        assertArrayEquals(new int[]{1, 5, 3, 2, 0, 0, 0, 0}, result);
+    }
 }
