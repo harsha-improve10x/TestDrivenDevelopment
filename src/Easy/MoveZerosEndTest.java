@@ -29,4 +29,11 @@ public class MoveZerosEndTest {
         int[] result = moveZerosEnd.move(new int[]{0});
         assertArrayEquals(new int[]{0}, result);
     }
+
+    @Test
+    public void givenZeroOne_returnOneZero() {
+        MoveZerosEnd moveZerosEnd = new MoveZerosEnd();
+        int[] result = moveZerosEnd.move(new int[]{0, 1});
+        assertArrayEquals(new int[]{1, 0}, result);
+    }
 }
