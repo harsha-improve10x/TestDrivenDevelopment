@@ -33,4 +33,10 @@ public class MajorityElementTest {
         int result = majorityElement.findMajorityElement(new int[]{1});
         assertEquals(1, result);
     }
+
+    @Test
+    public void givenOneTwo_returnMinusOne() {
+        int result = majorityElement.findMajorityElement(new int[]{1, 2});
+        assertEquals(-1, result);
+    }
 }
