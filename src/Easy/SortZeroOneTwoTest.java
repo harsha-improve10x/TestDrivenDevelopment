@@ -39,4 +39,10 @@ public class SortZeroOneTwoTest {
         int[] result = sortZeroOneTwo.sortArray(new int[]{1, 2});
         assertArrayEquals(new int[]{1, 2}, result);
     }
+
+    @Test
+    public void givenOneTwoZeroZero_returnZeroZeroOneTwo() {
+        int[] result = sortZeroOneTwo.sortArray(new int[]{1, 2, 0, 0});
+        assertArrayEquals(new int[]{0, 0, 1, 2}, result);
+    }
 }
