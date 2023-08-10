@@ -45,4 +45,10 @@ public class TwoSumTest {
         String result = twoSum.findSum(new int[]{1, 2}, 3);
         assertEquals("Yes", result);
     }
+
+    @Test
+    public void givenOneTwo_targetFour_returnNo() {
+        String result = twoSum.findSum(new int[]{1, 2}, 4);
+        assertEquals("No", result);
+    }
 }
