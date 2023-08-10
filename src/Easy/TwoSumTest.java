@@ -57,4 +57,10 @@ public class TwoSumTest {
         String result = twoSum.findSum(new int[]{1, 2, 3}, 5);
         assertEquals("Yes", result);
     }
+
+    @Test
+    public void givenOneTwoThree_targetSeven_returnYes() {
+        String result = twoSum.findSum(new int[]{1, 2, 3}, 7);
+        assertEquals("No", result);
+    }
 }
