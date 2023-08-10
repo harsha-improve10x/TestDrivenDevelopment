@@ -10,7 +10,17 @@ public class LeadersInArray {
             ArrayList<Integer> arrayList = new ArrayList<>();
             arrayList.add(arr[0]);
             return arrayList;
+        } else {
+            ArrayList<Integer> integerArrayList = new ArrayList<>();
+            for (int i = 0; i < arr.length; i++) {
+                for (int j = i+1; j < arr.length; j++) {
+                    if (arr[j] > arr[i]) {
+                        break;
+                    }
+                }
+                integerArrayList.add(arr[i]);
+            }
+            return integerArrayList;
         }
-        return new ArrayList<>();
     }
 }
