@@ -26,7 +26,15 @@ public class LeadersInArrayTest {
 
     @Test
     public void givenEmpty_returnEmpty() {
-        ArrayList<Integer> arrayList = leadersInArray.leaders(null);
+        ArrayList<Integer> arrayList = leadersInArray.leaders(new int[]{});
         assertEquals(new ArrayList<Integer>(), arrayList);
+    }
+
+    @Test
+    public void givenOne_returnOne() {
+        ArrayList<Integer> arrayList = leadersInArray.leaders(new int[]{1});
+        ArrayList<Integer> expected = new ArrayList<>();
+        expected.add(1);
+        assertEquals(expected, arrayList);
     }
 }
