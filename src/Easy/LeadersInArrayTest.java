@@ -46,4 +46,14 @@ public class LeadersInArrayTest {
         expected.add(0);
         assertEquals(expected, arrayList);
     }
+
+    @Test
+    public void givenFourSevenOneZero_returnSevenOneZero() {
+        ArrayList<Integer> arrayList = leadersInArray.leaders(new int[]{7, 1, 0});
+        ArrayList<Integer> expected = new ArrayList<>();
+        expected.add(7);
+        expected.add(1);
+        expected.add(0);
+        assertEquals(expected, arrayList);
+    }
 }
