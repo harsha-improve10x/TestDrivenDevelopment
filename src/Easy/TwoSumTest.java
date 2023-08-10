@@ -27,4 +27,10 @@ public class TwoSumTest {
         String result = twoSum.findSum(new int[]{}, 0);
         assertEquals("No", result);
     }
+
+    @Test
+    public void givenOne_targetOne_returnYes() {
+        String result = twoSum.findSum(new int[]{1}, 1);
+        assertEquals("Yes", result);
+    }
 }
