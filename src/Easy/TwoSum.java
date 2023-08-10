@@ -16,8 +16,6 @@ public class TwoSum {
                     sum = arr[i] + arr[j];
                     if (sum == targetElement) {
                         result = "Yes";
-                    } else {
-                        result = "No";
                     }
                 }
             }
