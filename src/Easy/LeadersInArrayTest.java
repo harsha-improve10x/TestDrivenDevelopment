@@ -49,11 +49,21 @@ public class LeadersInArrayTest {
 
     @Test
     public void givenFourSevenOneZero_returnSevenOneZero() {
-        ArrayList<Integer> arrayList = leadersInArray.leaders(new int[]{7, 1, 0});
+        ArrayList<Integer> arrayList = leadersInArray.leaders(new int[]{4, 7, 1, 0});
         ArrayList<Integer> expected = new ArrayList<>();
         expected.add(7);
         expected.add(1);
         expected.add(0);
+        assertEquals(expected, arrayList);
+    }
+
+    @Test
+    public void givenTenTwentyTwoTwelveThreeZeroSix_returnTwentyTwoTwelveSix() {
+        ArrayList<Integer> arrayList = leadersInArray.leaders(new int[]{10, 22, 12, 3, 0, 6});
+        ArrayList<Integer> expected = new ArrayList<>();
+        expected.add(22);
+        expected.add(12);
+        expected.add(6);
         assertEquals(expected, arrayList);
     }
 }
