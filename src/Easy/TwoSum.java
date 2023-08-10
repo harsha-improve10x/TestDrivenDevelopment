@@ -9,6 +9,19 @@ public class TwoSum {
             if (arr[0] == targetElement) {
                 result = "Yes";
             }
+        } else {
+            int sum = 0;
+            for (int i = 0; i < arr.length; i++) {
+                for (int j = i + 1; j < arr.length; j++) {
+                    sum = arr[i] + arr[j];
+                    if (sum == targetElement) {
+                        result = "Yes";
+                    } else {
+                        result = "No";
+                    }
+                }
+            }
+
         }
         return result;
     }
