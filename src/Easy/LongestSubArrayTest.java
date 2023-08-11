@@ -45,4 +45,10 @@ public class LongestSubArrayTest {
         int result = longestSubArray.findLongest(new int[]{1, 2, 3}, 7);
         assertEquals(0, result);
     }
+
+    @Test
+    public void givenOneTwoThreeFiveFive_returnTwo() {
+        int result = longestSubArray.findLongest(new int[]{1, 2, 3, 5}, 5);
+        assertEquals(2, result);
+    }
 }
