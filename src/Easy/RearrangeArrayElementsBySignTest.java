@@ -27,4 +27,10 @@ public class RearrangeArrayElementsBySignTest {
         int[] result = rearrangeArrayElementsBySign.rearrangeElements(new int[]{});
         assertArrayEquals(new int[]{}, result);
     }
+
+    @Test
+    public void givenOne_returnOne() {
+        int[] result = rearrangeArrayElementsBySign.rearrangeElements(new int[]{1});
+        assertArrayEquals(new int[]{1}, result);
+    }
 }

@@ -5,8 +5,9 @@ public class RearrangeArrayElementsBySign {
         int[] a = {};
         if (arr == null || arr.length == 0) {
             return a;
-        } else {
+        } else if (arr.length == 1) {
             return arr;
         }
+        return a;
     }
 }
