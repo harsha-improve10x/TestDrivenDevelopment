@@ -33,4 +33,10 @@ public class LongestSubArrayTest {
         int result = longestSubArray.findLongest(new int[]{1}, 1);
         assertEquals(1, result);
     }
+
+    @Test
+    public void givenOneTwo_returnTwo() {
+        int result = longestSubArray.findLongest(new int[]{1, 2}, 3);
+        assertEquals(2, result);
+    }
 }
