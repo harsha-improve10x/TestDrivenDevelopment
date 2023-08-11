@@ -1,5 +1,6 @@
 package Easy;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.Assert.assertArrayEquals;
@@ -10,7 +11,7 @@ public class RearrangeArrayElementsBySignTest {
     @Test
     public void nothing() {}
 
-    @Test
+    @BeforeEach
     public void setup() {
         rearrangeArrayElementsBySign = new RearrangeArrayElementsBySign();
     }
@@ -18,6 +19,12 @@ public class RearrangeArrayElementsBySignTest {
     @Test
     public void givenNull_returnEmpty() {
         int[] result = rearrangeArrayElementsBySign.rearrangeElements(null);
+        assertArrayEquals(new int[]{}, result);
+    }
+
+    @Test
+    public void givenEmpty_returnEmpty() {
+        int[] result = rearrangeArrayElementsBySign.rearrangeElements(new int[]{});
         assertArrayEquals(new int[]{}, result);
     }
 }
