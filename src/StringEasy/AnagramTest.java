@@ -33,4 +33,10 @@ public class AnagramTest {
         boolean result = anagram.isAnagram("", "A");
         assertEquals(false, result);
     }
+
+    @Test
+    public void givenAA_returnTrue() {
+        boolean result = anagram.isAnagram("A", "A");
+        assertEquals(true, result);
+    }
 }
