@@ -45,4 +45,10 @@ public class AnagramTest {
         boolean result = anagram.isAnagram("Abc", "Bac");
         assertEquals(true, result);
     }
+
+    @Test
+    public void givenAbcBdcA_returnFalse() {
+        boolean result = anagram.isAnagram("Abc", "BdcA");
+        assertEquals(false, result);
+    }
 }

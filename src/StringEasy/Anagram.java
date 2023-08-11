@@ -13,7 +13,7 @@ public class Anagram {
             String s1 = str1.toLowerCase();
             String s2 = str2.toLowerCase();
             if (s1.length() != s2.length()) {
-                result = true;
+                result = false;
             } else {
                 char[] a = s1.toCharArray();
                 char[] b = s2.toCharArray();
