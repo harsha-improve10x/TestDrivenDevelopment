@@ -57,4 +57,10 @@ public class AnagramTest {
         boolean result = anagram.isAnagram("Cat", "Act");
         assertEquals(true, result);
     }
+
+    @Test
+    public void givenRulesLesrt_returnFalse() {
+        boolean result = anagram.isAnagram("Rules", "Lesrt");
+        assertEquals(false, result);
+    }
 }
